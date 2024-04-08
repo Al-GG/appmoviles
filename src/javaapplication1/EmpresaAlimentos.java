@@ -25,19 +25,50 @@ public class EmpresaAlimentos {
         
         System.out.println("----------Ingrese sus datos personales---");
         
-        System.out.print("Ingrese su nombre:    "); // ingreso de datos y print de datos
+        System.out.print("Ingrese su nombre:    "); // ingreso de datos usuario y print de datos
 	String nombre = scanner.nextLine();
-        System.out.println(nombre);
+        //System.out.println(nombre);
         
         System.out.print("Ingrese su apellido:    ");
 	String apellido = scanner.nextLine();
-        System.out.println(apellido);
+        //System.out.println(apellido);
                 
         System.out.print("Ingrese su edad:    ");
 	int edad = scanner.nextInt();
-        System.out.println(edad);
+        //System.out.println(edad);
 
-        System.out.println("----------Ingrese datos del vehículo----");
+        System.out.println("----------Ingrese datos del vehículo----"); //ingreso datos vehiculo
+        
+       
+        System.out.print("Ingrese la marca:    ");
+        String marca = scanner.nextLine();
+         System.out.print("Ingrese el modelo:    ");
+            String modelo = scanner.nextLine();
+          System.out.print("Ingrese la cilindrada:    ");
+            String cilindrada = scanner.nextLine();
+           System.out.print("Ingrese el tipo de combustible:    ");
+             String combustible = scanner.nextLine();   
+           System.out.print("Ingrese la cantidad de pasajeros:    ");
+              String pasajeros = scanner.nextLine();
+              
+              
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
          System.out.println("Ingrese la compra:                  ");
