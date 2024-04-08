@@ -30,7 +30,8 @@ public class EmpresaAlimentos {
 	int edad = scanner.nextInt();
       
 
-        System.out.println("----------Ingrese datos del vehículo----"); //ingreso datos vehiculo
+        System.out.println("----------Ingrese datos del vehículo----"); 
+        scanner.nextLine(); //esto evita el error de la siguiente linea entre int y string
         System.out.print("Ingrese la marca:                    ");
         String marca = scanner.nextLine();
         System.out.print("Ingrese el modelo:                   ");
@@ -51,28 +52,31 @@ public class EmpresaAlimentos {
                 
              //if else para calcular total
             if (compras >= 50000) {
+              System.out.println("------Boleta Cliente-------");
               System.out.println("Datos del cliente: " +nombre+ " " +apellido+ " edad: " +edad);
-              System.out.println("Datos del vehículo : " +marca+ " " +modelo+ " " +cilindrada+ " "+combustible+" "+pasajeros);
+              System.out.println("Datos del vehículo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
               System.out.println("Despacho gratis");
               System.out.println("Total : " +compras);
               
               
             } else if (compras > 25000 && compras < 50000) {
+              System.out.println("------Boleta Cliente-------");
+              System.out.println("Datos del cliente: " +nombre+ " " +apellido+ " edad: " +edad);
+              System.out.println("Datos del vehículo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
               System.out.println("Despacho X 150");
               distancia = distancia*150;
               int total= compras+distancia;
               System.out.println("Total : " +total);
               
             } else {
+              System.out.println("------Boleta Cliente-------");
+              System.out.println("Datos del cliente: " +nombre+ " " +apellido+ " edad: " +edad);
+              System.out.println("Datos del vehículo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
               System.out.println("Despacho X 300");
               distancia = distancia*300;
               int total= compras+distancia;
               System.out.println("Total : " +total);
               
-            }
-         
-    
-    
-    
-    }
-    }
+            } //final if
+    }         //final main
+    }         //final
