@@ -1,10 +1,3 @@
-package javaapplication1;
-
-/**
- *
- * @author agg
- */
-
 
 import java.util.Scanner; //libreria inputs
 
