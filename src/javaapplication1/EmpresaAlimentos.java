@@ -39,17 +39,17 @@ public class EmpresaAlimentos {
 
         System.out.println("----------Ingrese datos del vehículo----");
                 
-            int compras = 50000;
-            int distancia = 19;
+           int compras = 60000;             //if else para calcular total
+            if (compras >= 50000) {
+              System.out.println("Despacho gratis");
+            } else if (compras > 25000 && compras < 50000) {
+              System.out.println("150");
+            } else {
+              System.out.println("300");
+            }
+         
     
-            if((compras > 50000) && (distancia <= 20) ){
-              System.out.println("Bien");
-              
-             
-            }else{
-              System.out.println("Mal");
-                   }
-
+    
+    
     }
-    
-}
+    }
