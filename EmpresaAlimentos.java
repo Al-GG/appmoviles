@@ -10,7 +10,7 @@ public class EmpresaAlimentos {
         
         System.out.println("-----------------------------------------");  //menu
         System.out.println("----------Empresa de Alimentos-----------");
-        System.out.println("----------Ingrese la Información---------");
+        System.out.println("----------Ingrese la Informacion---------");
         System.out.println("-----------------------------------------");
         
         
@@ -23,7 +23,7 @@ public class EmpresaAlimentos {
 	int edad = scanner.nextInt();
       
 
-        System.out.println("----------Ingrese datos del vehículo----"); 
+        System.out.println("----------Ingrese datos del vehiculo----"); 
         scanner.nextLine(); //esto evita el error de la siguiente linea entre int y string
         System.out.print("Ingrese la marca:                    ");
         String marca = scanner.nextLine();
@@ -47,7 +47,7 @@ public class EmpresaAlimentos {
             if (compras >= 50000) {
               System.out.println("------Boleta Cliente-------");
               System.out.println("Datos del cliente: " +nombre+ " " +apellido+ " edad: " +edad);
-              System.out.println("Datos del vehículo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
+              System.out.println("Datos del vehiculo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
               System.out.println("Despacho gratis");
               System.out.println("Total : " +compras);
               
@@ -55,7 +55,7 @@ public class EmpresaAlimentos {
             } else if (compras > 25000 && compras < 50000) {
               System.out.println("------Boleta Cliente-------");
               System.out.println("Datos del cliente: " +nombre+ " " +apellido+ " edad: " +edad);
-              System.out.println("Datos del vehículo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
+              System.out.println("Datos del vehiculo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
               System.out.println("Despacho X 150");
               distancia = distancia*150;
               int total= compras+distancia;
@@ -64,7 +64,7 @@ public class EmpresaAlimentos {
             } else {
               System.out.println("------Boleta Cliente-------");
               System.out.println("Datos del cliente: " +nombre+ " " +apellido+ " edad: " +edad);
-              System.out.println("Datos del vehículo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
+              System.out.println("Datos del vehiculo : " +marca+ " " +modelo+ " Cil. " +cilindrada+ " Combus. "+combustible+" Pasajeros: "+pasajeros);  
               System.out.println("Despacho X 300");
               distancia = distancia*300;
               int total= compras+distancia;
